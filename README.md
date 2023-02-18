@@ -12,3 +12,5 @@ high-level overview of a PowerShell framework that can be used to analyze securi
 - Take action: Based on the analysis and visualization, appropriate action can be taken to remediate security incidents.
 
 Overall, this framework can be used to automate many of the incident response tasks, making the process faster and more efficient. However, it's important to note that this is just a high-level overview and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
+
+# Editor.md
