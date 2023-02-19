@@ -2,13 +2,15 @@
 
 #### What can you do with FIRP (Firt Incident Response Powershell)?            
 
-+ Analyze brute force attempts, time-frame -> **Get-BruteForce**
-+ Analyze Microsoft Defender malware detected -> **Get-DetectedMalware**
-+ Analyze failed logons and successess, time-frame -> **Get-FailedAndSuccessLogons**
-+ Analyze suspicious IP connections to the machine, time-frame -> **Get-LogonInfo**
-+ Analyze scheduled tasks, time-frame -> **Get-ScheduledTaskEventLogs4698**
-+ Analyze failed RDP sessions, time-frame -> **Get-FailedRDP**
-+ Analyze failed network logons -> **Get-FailedNetworkLogons**
++ Analyze Security Logs for brute force attempts, time-frame -> **Get-BruteForce**
++ Analyze Security failed logons and successess, time-frame -> **Get-FailedAndSuccessLogons**
++ Analyze Security suspicious IP connections to the machine, time-frame -> **Get-LogonInfo**
++ Analyze Security scheduled tasks, time-frame -> **Get-ScheduledTaskEventLogs4698**
++ Analyze Security failed RDP sessions, time-frame -> **Get-FailedRDP**
++ Analyze Security failed network logons -> **Get-FailedNetworkLogons**
++ Analyze Security Windows Services -> **Get-Services**
++ Analyze Win Defender logs for malware -> **Get-DetectedMalware**
++ Analyze Win Defender logs for Real Time disabled -> **Get-DefenderAVRealTimeDisabled**
 + Analyze PowerShell logs using keywords, time-frame -> **Get-PowerShellLog**
 + Analyze PowerShell base64 scripts used, time-frame -> **Get-PowerShellLogb64**
 + Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
@@ -28,7 +30,6 @@
 + Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
 + Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
 + Analyze Sysmon Drivers -> **Get-SysmonDriver**
-+ Analyze Security Windows Services -> **Get-Services**
 
 - **FIRP** (Firt Incident Response PowerShell) is a PowerShell-based framework designed to help with incident response activities. The framework is capable of analyzing a variety of security logs and incident response artifacts, including PowerShell and Sysmon logs, as well as Windows event logs, and  hope in future to extend to memory.
 
@@ -50,6 +51,11 @@ Overall, this framework can be used to automate many of the incident response ta
 **Get-DetectedMalware**  ->  Get-DetectedMalware -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219968698-c197e41f-9987-45c1-9029-8bcc4f8e08a7.png)
+
+**Get-DefenderAVRealTimeDisabled**  ->  Get-DefenderAVRealTimeDisabled -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219969964-9be28715-caa0-4abd-ac9e-2ad27b61fab5.png)
+
  
 **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
 
