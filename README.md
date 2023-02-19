@@ -1,10 +1,13 @@
 **FIRP**  - **Firt Incident Response Powershell** 
 
-PowerShell framework that can be used to analyze security, PowerShell, Sysmon logs, and other incident response artifacts.
+FIRP (Firt Incident Response PowerShell) is a PowerShell-based framework designed to help with incident response activities. The framework is capable of analyzing a variety of security logs and incident response artifacts, including PowerShell and Sysmon logs, as well as Windows event logs, and  hope in future to extend to memory.
 
-- Analyze data: After the data is normalized, it can be analyzed to detect security events and anomalies. PowerShell can be used to automate the analysis process and generate reports that highlight potential security issues.
+FIRP provides a comprehensive set of PowerShell cmdlets that can be used to automate the analysis of these artifacts. The framework can be used to quickly identify and investigate suspicious activities on a system, including malware infections, network intrusions, and other security incidents.
 
-- Correlate data: Correlation involves linking events and data from different sources to identify patterns and relationships. PowerShell can be used to correlate data and help identify security incidents.
+The FIRP framework is highly extensible, and allows users to create their own custom cmdlets to analyze additional artifacts. FIRP also includes a set of pre-built modules for common incident response activities, such as file analysis, network analysis, and memory forensics.
+
+FIRP is designed to be easy to use, and provides a consistent interface for analyzing a wide range of security logs and incident response artifacts. The framework is open source and can be downloaded from the GitHub repository, making it accessible to a wide range of incident response professionals.
+
 
 
 Overall, this framework can be used to automate many of the incident response tasks, making the process faster and more efficient. However, it's important to note that this is just a high-level overview and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
