@@ -14,6 +14,7 @@
 + Analyze Security Windows Services -> **Get-Services**
 + Analyze Security Local Account Created -> **Get-LocalAccountCreated**
 + Analyze Security Local Account Added to Administrator Group -> **Get-LocalAccountAddedToAdmin**
++ Analyze Security Local Account Password changed -> **Get-LocalAccountPwdChanged**
 
  #### Windows Defender Logs
 + Analyze Win Defender logs for malware -> **Get-DetectedMalware**
@@ -106,6 +107,10 @@ Overall, this framework can be used to automate many of the incident response ta
 **Get-LocalAccountAddedToAdmin** -> Get-LocalAccountAddedToAdmin  -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219982729-891567d7-66d0-4c86-be72-cb6df790c0fb.png)
+
+**Get-LocalAccountPwdChanged** -> Get-LocalAccountPwdChanged -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219983344-23fea06d-202e-4559-b7ad-40fd31272543.png)
 
 
 **Get-PowerShellLog** -> Get-PowerShellLog -Keywords "Invoke-WebRequest" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
