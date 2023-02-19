@@ -4,9 +4,6 @@
 
 - **FIRP** provides a comprehensive set of PowerShell cmdlets that can be used to automate the analysis of these artifacts. The framework can be used to quickly identify and investigate suspicious activities on a system, including malware infections, network intrusions, and other security incidents.
 
-- **The FIRP framework **is highly extensible, and allows users to create their own custom cmdlets to analyze additional artifacts. FIRP also includes a set of pre-built modules for common incident response activities, such as file analysis, network analysis, and memory forensics.
-
-
 
 Overall, this framework can be used to automate many of the incident response tasks, making the process faster and more efficient. However, it's important to note that this is just a high-level overview and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
 
