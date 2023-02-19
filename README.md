@@ -11,7 +11,8 @@ Overall, this framework can be used to automate many of the incident response ta
 
 # Install'
 
-###Open your Powershell Admin shell and import the module: Import-Module -Force .\firp.ps1
+###Open your Powershell Admin shell and import the module: 
+<kbd><kbd><samp>File</samp></kbd>⇒<kbd><samp>New Document</samp></kbd></kbd>
 
 # Functions'
 
