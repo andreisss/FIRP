@@ -1,5 +1,32 @@
 ![image](https://user-images.githubusercontent.com/10872139/219940912-8e93f54c-f6dd-4cd6-84d8-b1afd9d0f916.png)
 
+#### What can you do with FIRP (Firt Incident Response Powershell)?            
+
++ Analyze brute force attempts in a specific time-frame -> **Get-BruteForce**
++ Analyze failed logons and successes in a specific time-frame -> **Get-FailedAndSuccessLogons**
++ Analyze suspicious IP connections to the machine in a specific time-frame -> **Get-LogonInfo**
++ Analyze scheduled tasks in a specific time-frame -> **Get-ScheduledTaskEventLogs4698**
++ Analyze failed RDP sessions in a specific time-frame -> **Get-FailedRDP**
++ Analyze failed network logons in a specific time-frame -> **Get-FailedNetworkLogons**
++ Analyze PowerShell logs using keywords in a specific time-frame -> **Get-PowerShellLog**
++ Analyze PowerShell base64 scripts used in a specific time-frame -> **Get-PowerShellLogb64**
++ Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
++ Analyze Sysmon Processes filtering for the malicious path abused by malware and threat actors -> **Get-SysmonProcess**
++ Analyze Sysmon Network Activity -> **Get-SysmonNetwork**
++ Analyze Sysmon Zone Identifier files and Content appended with all details -> **Get-SysmonFileStreamCreate**
++ Analyze Sysmon Process Injection activity -> **Get-SysmonCreateRemoteThread**
++ Analyze Sysmon File Creation -> **Get-SysmonFileCreate**
++ Analyze Sysmon Process Termination -> **Get-SysmonProcessTerminate**
++ Analyze Sysmon Registry key and value create and delete operations -> **Get-SysmonRegAddDelete**
++ Analyze Sysmon value rename operations, recording the new name of the key or value that was renamed-> **Get-SysmonRegRename**
++ Analyze Sysmon Registry event records the value written for Registry values of type DWORD and QWORD -> **Get-SysmonReg**
++ Analyze Sysmon DNS query -> **Get-SysmonDNS**
++ Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
++ Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
++ Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
++ Analyze Sysmon Drivers -> **Get-SysmonDriver**
++ Analyze Security Windows Services -> **Get-Services**
+
 - **FIRP** (Firt Incident Response PowerShell) is a PowerShell-based framework designed to help with incident response activities. The framework is capable of analyzing a variety of security logs and incident response artifacts, including PowerShell and Sysmon logs, as well as Windows event logs, and  hope in future to extend to memory.
 
 - **FIRP** provides a comprehensive set of PowerShell cmdlets that can be used to automate the analysis of these artifacts. The framework can be used to quickly identify and investigate suspicious activities on a system, including malware infections, network intrusions, and other security incidents.
@@ -92,33 +119,6 @@ Overall, this framework can be used to automate many of the incident response ta
 
 -**Get-Services** -> Get-Services -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
-
-#### What can you do with FIRP (Firt Incident Response Powershell)?            
-
-+ Analyze brute force attempts in a specific time-frame -> **Get-BruteForce**
-+ Analyze failed logons and successes in a specific time-frame -> **Get-FailedAndSuccessLogons**
-+ Analyze suspicious IP connections to the machine in a specific time-frame -> **Get-LogonInfo**
-+ Analyze scheduled tasks in a specific time-frame -> **Get-ScheduledTaskEventLogs4698**
-+ Analyze failed RDP sessions in a specific time-frame -> **Get-FailedRDP**
-+ Analyze failed network logons in a specific time-frame -> **Get-FailedNetworkLogons**
-+ Analyze PowerShell logs using keywords in a specific time-frame -> **Get-PowerShellLog**
-+ Analyze PowerShell base64 scripts used in a specific time-frame -> **Get-PowerShellLogb64**
-+ Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
-+ Analyze Sysmon Processes filtering for the malicious path abused by malware and threat actors -> **Get-SysmonProcess**
-+ Analyze Sysmon Network Activity -> **Get-SysmonNetwork**
-+ Analyze Sysmon Zone Identifier files and Content appended with all details -> **Get-SysmonFileStreamCreate**
-+ Analyze Sysmon Process Injection activity -> **Get-SysmonCreateRemoteThread**
-+ Analyze Sysmon File Creation -> **Get-SysmonFileCreate**
-+ Analyze Sysmon Process Termination -> **Get-SysmonProcessTerminate**
-+ Analyze Sysmon Registry key and value create and delete operations -> **Get-SysmonRegAddDelete**
-+ Analyze Sysmon value rename operations, recording the new name of the key or value that was renamed-> **Get-SysmonRegRename**
-+ Analyze Sysmon Registry event records the value written for Registry values of type DWORD and QWORD -> **Get-SysmonReg**
-+ Analyze Sysmon DNS query -> **Get-SysmonDNS**
-+ Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
-+ Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
-+ Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
-+ Analyze Sysmon Drivers -> **Get-SysmonDriver**
-+ Analyze Security Windows Services -> **Get-Services**
 
 
 Overall, this PowerShell framework can be used to automate many incident response tasks, making the process faster and more efficient. It's important to note that this is just a high-level overview, and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
