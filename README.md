@@ -36,7 +36,7 @@ Overall, this framework can be used to automate many of the incident response ta
 
 ![image](https://user-images.githubusercontent.com/10872139/219939238-12b72646-46ff-49ec-aef4-aa8d64783662.png)
 
-- **Get-PowerShellLog** -> Get-PowerShellLog -Keywords "HTTP://" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
+- **Get-PowerShellLog** -> Get-PowerShellLog -Keywords "Invoke-WebRequest" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
 ![image](https://user-images.githubusercontent.com/10872139/219940512-85a33055-826e-42fc-bd99-63b298d1f5d4.png)
 
 - **Get-PowerShellLogb64**
