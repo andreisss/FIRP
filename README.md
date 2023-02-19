@@ -87,6 +87,7 @@ Overall, this framework can be used to automate many of the incident response ta
 + Analyze Sysmon File Creation -> **Get-SysmonFileCreate**
 + Analyze Sysmon Process Termination -> **Get-SysmonProcessTerminate**
 + Analyze Sysmon Registry key and value create and delete operations -> **Get-SysmonRegAddDelete**
++ Analyze Sysmon value rename operations, recording the new name of the key or value that was renamed-> **Get-SysmonRegRename**
 + Analyze Sysmon Registry event records the value written for Registry values of type DWORD and QWORD -> **Get-SysmonReg**
 + Analyze Sysmon DNS query -> **Get-SysmonDNS**
 + Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
@@ -94,5 +95,6 @@ Overall, this framework can be used to automate many of the incident response ta
 + Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
 + Analyze Sysmon Drivers -> **Get-SysmonDriver**
 + Analyze Security Windows Services -> **Get-Services**
+
 
 Overall, this PowerShell framework can be used to automate many incident response tasks, making the process faster and more efficient. It's important to note that this is just a high-level overview, and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
