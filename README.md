@@ -19,11 +19,11 @@ Overall, this framework can be used to automate many of the incident response ta
  
 - **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
 
-![image](https://user-images.githubusercontent.com/10872139/219939037-372194eb-7e91-4fa8-a6b8-bbf70b5e4d5b.png)
+![image](https://user-images.githubusercontent.com/10872139/219942596-8465f1f1-cf71-4b47-ba56-ce7a55cffa07.png)
 
 - **Get-ScheduledTaskEventLogs4698** -> Get-ScheduledTaskEventLogs4698 -StartTime '2021-02-14 00:00:00' -EndTime '2023-02-17 23:59:59'
 
-![image](https://user-images.githubusercontent.com/10872139/219939083-32a356ae-9208-49f8-b71d-74de79329614.png)
+![image](https://user-images.githubusercontent.com/10872139/219942514-2b5b89f5-8130-4641-ace7-f7726ac67e50.png)
 
 - **Get-FailedRDP**  -> Get-FailedRDP -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
 
