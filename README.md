@@ -11,8 +11,11 @@ Overall, this framework can be used to automate many of the incident response ta
 
 # Install'
 
+###Code Blocks (multi-language) & highlighting
+
 ####Inline code
-Import-Module -Force .\firp.ps
+
+`$ npm install marked`
 
 # Functions
 
