@@ -10,10 +10,8 @@ PowerShell framework that can be used to analyze security, PowerShell, Sysmon lo
 Overall, this framework can be used to automate many of the incident response tasks, making the process faster and more efficient. However, it's important to note that this is just a high-level overview and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
 
 # Install'
-
-###Code Blocks (multi-language) & highlighting
-
-####Inline code
+- **Open PowerShell with administrative privileges.
+- **Run the following command to check if you have the module installed already:**
 
 `Import-Module -Force .\firp.ps1`
 
