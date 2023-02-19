@@ -29,21 +29,20 @@ Overall, this framework can be used to automate many of the incident response ta
 - **Get-FailedNetworkLogons**  -> Get-FailedNetworkLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
 
 - **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
-- 
+ 
 ![image](https://user-images.githubusercontent.com/10872139/219942447-94d3b51c-af95-4693-88d3-147b674a719e.png)
 
 - **Get-PowerShellLog** -> Get-PowerShellLog -Keywords "Invoke-WebRequest" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
-- 
+
 ![image](https://user-images.githubusercontent.com/10872139/219940512-85a33055-826e-42fc-bd99-63b298d1f5d4.png )
 
 - **Get-PowerShellLogb64** -> Get-PowerShellLogb64 -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
-- 
+
 ![image](https://user-images.githubusercontent.com/10872139/219941486-dd201510-f9e5-4236-9f1b-2c288200b570.png)
 
 - **Get-PowerShellMaldev** -> Get-PowerShellMaldev -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
-- 
-![image](https://user-images.githubusercontent.com/10872139/219942195-8c391f71-4c10-401b-b1f5-72083a4ef51e.png)
 
+![image](https://user-images.githubusercontent.com/10872139/219942195-8c391f71-4c10-401b-b1f5-72083a4ef51e.png)
 
 - **Get-SysmonProcess** -> Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
