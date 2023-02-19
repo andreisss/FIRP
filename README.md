@@ -2,24 +2,24 @@
 
 #### What can you do with FIRP (Firt Incident Response Powershell)?            
 
-+ Analyze brute force attempts in a specific time-frame -> **Get-BruteForce**
-+ Analyze failed logons and successes in a specific time-frame -> **Get-FailedAndSuccessLogons**
-+ Analyze suspicious IP connections to the machine in a specific time-frame -> **Get-LogonInfo**
-+ Analyze scheduled tasks in a specific time-frame -> **Get-ScheduledTaskEventLogs4698**
-+ Analyze failed RDP sessions in a specific time-frame -> **Get-FailedRDP**
-+ Analyze failed network logons in a specific time-frame -> **Get-FailedNetworkLogons**
-+ Analyze PowerShell logs using keywords in a specific time-frame -> **Get-PowerShellLog**
-+ Analyze PowerShell base64 scripts used in a specific time-frame -> **Get-PowerShellLogb64**
++ Analyze brute force attempts, time-frame -> **Get-BruteForce**
++ Analyze failed logons and successess, time-frame -> **Get-FailedAndSuccessLogons**
++ Analyze suspicious IP connections to the machine, time-frame -> **Get-LogonInfo**
++ Analyze scheduled tasks, time-frame -> **Get-ScheduledTaskEventLogs4698**
++ Analyze failed RDP sessions, time-frame -> **Get-FailedRDP**
++ Analyze failed network logons -> **Get-FailedNetworkLogons**
++ Analyze PowerShell logs using keywords, time-frame -> **Get-PowerShellLog**
++ Analyze PowerShell base64 scripts used, time-frame -> **Get-PowerShellLogb64**
 + Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
-+ Analyze Sysmon Processes filtering for the malicious path abused by malware and threat actors -> **Get-SysmonProcess**
++ Analyze Sysmon Processes using suspicious paths -> **Get-SysmonProcess**
 + Analyze Sysmon Network Activity -> **Get-SysmonNetwork**
-+ Analyze Sysmon Zone Identifier files and Content appended with all details -> **Get-SysmonFileStreamCreate**
++ Analyze Sysmon Zone Identifier files -> **Get-SysmonFileStreamCreate**
 + Analyze Sysmon Process Injection activity -> **Get-SysmonCreateRemoteThread**
 + Analyze Sysmon File Creation -> **Get-SysmonFileCreate**
 + Analyze Sysmon Process Termination -> **Get-SysmonProcessTerminate**
 + Analyze Sysmon Registry key and value create and delete operations -> **Get-SysmonRegAddDelete**
-+ Analyze Sysmon value rename operations, recording the new name of the key or value that was renamed-> **Get-SysmonRegRename**
-+ Analyze Sysmon Registry event records the value written for Registry values of type DWORD and QWORD -> **Get-SysmonReg**
++ Analyze Sysmon value rename operations -> **Get-SysmonRegRename**
++ Analyze Sysmon Registry event records DWORD and QWORD -> **Get-SysmonReg**
 + Analyze Sysmon DNS query -> **Get-SysmonDNS**
 + Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
 + Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
