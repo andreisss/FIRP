@@ -22,6 +22,7 @@
 + Analyze Sysmon Registry event records DWORD and QWORD -> **Get-SysmonReg**
 + Analyze Sysmon DNS query -> **Get-SysmonDNS**
 + Analyze Pipe Created -> **Get-SysmonPipe**
++ Analyze Pipe Connected -> **Get-SysmonPipeConnected**
 + Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
 + Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
 + Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
@@ -113,6 +114,8 @@ Overall, this framework can be used to automate many of the incident response ta
 -**Get-SysmonPipe** -> Get-SysmonPipe -StartTime '2023-02-19T15:06:00' -EndTime '2023-02-19T17:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219960141-6b209120-7ef3-4098-889b-a59c95e3e7a7.png)
+
+**Get-SysmonPipeConnected** -> Get-SysmonPipeConnected -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 
 -**Get-SysmonWMIFilter** ->  Get-SysmonWMIFilter -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
