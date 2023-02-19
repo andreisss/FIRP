@@ -55,7 +55,17 @@ Get-PowerShellMaldev -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58
 Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 
-# What can you do?'
+# What can you do?
+
+- Analyze bruteforce attemps in a specific time-frame - Get-bruteforce
+- Analyze failed logons and success in a specific time-frame - Get-FailedAndSuccessLogons
+- Analyze suspicious Ip connections to the machine in a specific time-frame - Get-LogonInfo
+- Analyze schedule tasks in a specific timeframe - Get-ScheduledTaskEventLogs4698
+- Analyze Failed RDP sessions in a specific timeframe - Get-FailedRDP
+- Analyze failed network logons in a specific timeframe - Get-FailedNetworkLogons
+- Analyze powershell logs using keywords in a specific timeframe - Get-PowerShellLog
+- Analyze Powershell base64 scripts used in a specific timeframe - Get-PowerShellLogb64
+- Analyze Powershell malicious keywords as database (keywords.txt) - Get-PowerShellMaldev
 
 - Analyze data: After the data is normalized, it can be analyzed to detect security events and anomalies. PowerShell can be used to automate the analysis process and generate reports that highlight potential security issues.
 
