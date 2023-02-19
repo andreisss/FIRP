@@ -46,6 +46,8 @@ Overall, this framework can be used to automate many of the incident response ta
 
 - **Get-SysmonProcess** -> Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
+![image](https://user-images.githubusercontent.com/10872139/219943261-d07046c1-b174-4477-bf6f-f5a111b3556d.png)
+
 
 #### What can you do?
                 
