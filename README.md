@@ -11,6 +11,7 @@
 + Analyze Security Windows Services -> **Get-Services**
 + Analyze Win Defender logs for malware -> **Get-DetectedMalware**
 + Analyze Win Defender logs for Real Time disabled -> **Get-DefenderAVRealTimeDisabled**
++ Analyze Win Defender logs, antimalware configuration changed.-> **Get-DefenderAVChanged**
 + Analyze PowerShell logs using keywords, time-frame -> **Get-PowerShellLog**
 + Analyze PowerShell base64 scripts used, time-frame -> **Get-PowerShellLogb64**
 + Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
@@ -56,6 +57,9 @@ Overall, this framework can be used to automate many of the incident response ta
 
 ![image](https://user-images.githubusercontent.com/10872139/219969964-9be28715-caa0-4abd-ac9e-2ad27b61fab5.png)
 
+ **Get-DefenderAVChange**  ->  Get-DefenderAVChanged -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219969964-9be28715-caa0-4abd-ac9e-2ad27b61fab5.png)
  
 **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
 
