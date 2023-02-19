@@ -59,7 +59,7 @@ Overall, this framework can be used to automate many of the incident response ta
 
  **Get-DefenderAVChange**  ->  Get-DefenderAVChanged -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
-![image](https://user-images.githubusercontent.com/10872139/219969964-9be28715-caa0-4abd-ac9e-2ad27b61fab5.png)
+![image](https://user-images.githubusercontent.com/10872139/219970342-ffb3a645-5487-4fac-abf5-69aaee679ff0.png)
  
 **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
 
