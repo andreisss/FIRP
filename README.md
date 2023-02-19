@@ -19,11 +19,11 @@ Overall, this framework can be used to automate many of the incident response ta
  
 - **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
 
-![image](https://user-images.githubusercontent.com/10872139/219939037-372194eb-7e91-4fa8-a6b8-bbf70b5e4d5b.png =250x250)
+![image](https://user-images.githubusercontent.com/10872139/219939037-372194eb-7e91-4fa8-a6b8-bbf70b5e4d5b.png |width=100px)
 
 - **Get-ScheduledTaskEventLogs4698** -> Get-ScheduledTaskEventLogs4698 -StartTime '2021-02-14 00:00:00' -EndTime '2023-02-17 23:59:59'
 
-![image](https://user-images.githubusercontent.com/10872139/219939083-32a356ae-9208-49f8-b71d-74de79329614.png =250x250)
+![image](https://user-images.githubusercontent.com/10872139/219939083-32a356ae-9208-49f8-b71d-74de79329614.png |width=100px)
 
 - **Get-FailedRDP**  -> Get-FailedRDP -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
 
@@ -31,13 +31,13 @@ Overall, this framework can be used to automate many of the incident response ta
 
 - **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
 
-![image](https://user-images.githubusercontent.com/10872139/219939238-12b72646-46ff-49ec-aef4-aa8d64783662.png =250x250)
+![image](https://user-images.githubusercontent.com/10872139/219939238-12b72646-46ff-49ec-aef4-aa8d64783662.png|width=100px)
 
 - **Get-PowerShellLog** -> Get-PowerShellLog -Keywords "Invoke-WebRequest" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
-![image](https://user-images.githubusercontent.com/10872139/219940512-85a33055-826e-42fc-bd99-63b298d1f5d4.png =250x250)
+![image](https://user-images.githubusercontent.com/10872139/219940512-85a33055-826e-42fc-bd99-63b298d1f5d4.png |width=100px)
 
 - **Get-PowerShellLogb64** -> Get-PowerShellLogb64 -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
-- ![image](https://user-images.githubusercontent.com/10872139/219941486-dd201510-f9e5-4236-9f1b-2c288200b570.png =250x250)
+- ![image](https://user-images.githubusercontent.com/10872139/219941486-dd201510-f9e5-4236-9f1b-2c288200b570.png |width=100px)
 
 - **Get-PowerShellMaldev**
 
