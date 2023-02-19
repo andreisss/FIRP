@@ -11,7 +11,7 @@ Overall, this framework can be used to automate many of the incident response ta
 
 # Install'
 - **Open PowerShell with administrative privileges.
-- **Run the following command to check if you have the module installed already:**
+- **Run the following command:**
 
 `Import-Module -Force .\firp.ps1`
 
