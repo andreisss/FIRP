@@ -15,7 +15,7 @@ Overall, this framework can be used to automate many of the incident response ta
 
 ####Inline code
 
-`$ npm install marked`
+`Import-Module -Force .\firp.ps1`
 
 # Functions
 
