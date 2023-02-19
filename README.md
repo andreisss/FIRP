@@ -48,6 +48,14 @@ Overall, this framework can be used to automate many of the incident response ta
 
 ![image](https://user-images.githubusercontent.com/10872139/219943261-d07046c1-b174-4477-bf6f-f5a111b3556d.png)
 
+-**Get-SysmonNetwork** -> Get-SysmonNetwork -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219944178-d9615da9-7730-4ab4-8d59-855825346df4.png)
+
+-**Get-SysmonFileStreamCreate** -> Get-SysmonFileStreamCreate -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219944235-9d97d844-5254-4199-9ce7-abf92868b862.png)
+
 
 #### What can you do with FIRP (Firt Incident Response Powershell)?            
 
