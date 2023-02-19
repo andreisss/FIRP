@@ -23,7 +23,7 @@ Overall, this framework can be used to automate many of the incident response ta
 
  
 - **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
--
+
 ![image](https://user-images.githubusercontent.com/10872139/219939037-372194eb-7e91-4fa8-a6b8-bbf70b5e4d5b.png)
 
 - **Get-ScheduledTaskEventLogs4698** -> Get-ScheduledTaskEventLogs4698 -StartTime '2021-02-14 00:00:00' -EndTime '2023-02-17 23:59:59'
@@ -56,8 +56,6 @@ Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00
 
 
 # What can you do?'
-
-
 
 - Analyze data: After the data is normalized, it can be analyzed to detect security events and anomalies. PowerShell can be used to automate the analysis process and generate reports that highlight potential security issues.
 
