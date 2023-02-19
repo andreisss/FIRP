@@ -12,7 +12,7 @@ high-level overview of a PowerShell framework that can be used to analyze securi
 
 Overall, this framework can be used to automate many of the incident response tasks, making the process faster and more efficient. However, it's important to note that this is just a high-level overview and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
 
-## - Functions
+# Functions'
 
 - **Get-bruteforce** 
  
@@ -55,7 +55,7 @@ Get-PowerShellMaldev -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58
 Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 
-# Editor.md'
+# What can you do?'
 
 
 
