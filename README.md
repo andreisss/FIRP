@@ -8,6 +8,7 @@
 + Analyze Security scheduled tasks, time-frame -> **Get-ScheduledTaskEventLogs4698**
 + Analyze Security failed RDP sessions, time-frame -> **Get-FailedRDP**
 + Analyze Security failed network logons -> **Get-FailedNetworkLogons**
++ Analyze Security success network logons -> **Get-SuccessNetworkLogons**
 + Analyze Security Windows Services -> **Get-Services**
 + Analyze Win Defender logs for malware -> **Get-DetectedMalware**
 + Analyze Win Defender logs for Real Time disabled -> **Get-DefenderAVRealTimeDisabled**
@@ -75,6 +76,13 @@ Overall, this framework can be used to automate many of the incident response ta
 **Get-FailedRDP**  -> Get-FailedRDP -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
 
 **Get-FailedNetworkLogons**  -> Get-FailedNetworkLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219980398-3303113e-9dbd-41ab-88e3-7feaa3df09cb.png)
+
+**Get-SuccessNetworkLogons**   -> Get-SuccessNetworkLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-19 23:54:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219980444-9b154538-34ae-42b3-af01-b4aee61a891b.png)
+
 
 **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
  
