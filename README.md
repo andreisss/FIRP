@@ -14,8 +14,7 @@ Overall, this framework can be used to automate many of the incident response ta
 
 - **Get-bruteforce**  ->  Get-bruteforce -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
 
-![image](https://user-images.githubusercontent.com/10872139/219938879-24e497ab-cdaf-4ebb-9e4b-1427f7e6bc4e.png)
-
+![image](https://user-images.githubusercontent.com/10872139/219942642-f42d7fb4-3bd4-43ca-9acd-c47ba4b845d3.png)
  
 - **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
 
