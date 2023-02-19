@@ -1,4 +1,4 @@
-### FIRP 
+**FIRP**  - **Firt Incident Response Powershell** 
 
 PowerShell framework that can be used to analyze security, PowerShell, Sysmon logs, and other incident response artifacts.
 
