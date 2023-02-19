@@ -4,11 +4,11 @@ high-level overview of a PowerShell framework that can be used to analyze securi
 
 ## - Functions
 
-- **Get-bruteforce ** ``
+- **Get-bruteforce** 
  
  Get-bruteforce -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
  
-- **Get-FailedAndSuccessLogons ** 
+- **Get-FailedAndSuccessLogons** 
 
 Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
 
