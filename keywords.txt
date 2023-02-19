@@ -6,6 +6,10 @@ Phant0m
 FromBase64String
 VirtualAlloc
 CreateThread
+GetAsyncKeyState
+WM_KEYBOARD_LL
+GetKeyboardState
+NtUserGetAsyncKeyState
 CradleCrafter
 Obfuscation
 Empire
