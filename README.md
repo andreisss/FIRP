@@ -2,6 +2,7 @@
 
 #### What can you do with FIRP (Firt Incident Response Powershell)?            
 
+ #### Security Logs
 + Analyze Security Logs for brute force attempts, time-frame -> **Get-BruteForce**
 + Analyze Security failed logons and successess, time-frame -> **Get-FailedAndSuccessLogons**
 + Analyze Security suspicious IP connections to the machine, time-frame -> **Get-LogonInfo**
@@ -11,13 +12,19 @@
 + Analyze Security success network logons -> **Get-SuccessNetworkLogons**
 + Analyze Security Pass The Hash Attack -> **Get-PassTheHash**
 + Analyze Security Windows Services -> **Get-Services**
+
+ #### Windows Defender Logs
 + Analyze Win Defender logs for malware -> **Get-DetectedMalware**
 + Analyze Win Defender logs for Real Time disabled -> **Get-DefenderAVRealTimeDisabled**
 + Analyze Win Defender logs, antimalware configuration changed.-> **Get-DefenderAVChanged**
 + Analyze Win Defender logs, antimalware engine found malware -> **Get-DefenderAntimalware** 
+
+ #### Powershell Logs
 + Analyze PowerShell logs using keywords, time-frame -> **Get-PowerShellLog**
 + Analyze PowerShell base64 scripts used, time-frame -> **Get-PowerShellLogb64**
 + Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
+
+ #### Sysmon Logs
 + Analyze Sysmon Processes using suspicious paths -> **Get-SysmonProcess**
 + Analyze Sysmon Network Activity -> **Get-SysmonNetwork**
 + Analyze Sysmon Zone Identifier files -> **Get-SysmonFileStreamCreate**
