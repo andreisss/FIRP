@@ -37,96 +37,96 @@
 Overall, this framework can be used to automate many of the incident response tasks, making the process faster and more efficient. However, it's important to note that this is just a high-level overview and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
 
 # How to use it
-- **Open PowerShell with administrative privileges.** `Import-Module -Force .\firp.ps1`
+
+**Open PowerShell with administrative privileges.** `Import-Module -Force .\firp.ps1`
 
 # Functions
 
-- **Get-bruteforce**  ->  Get-bruteforce -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
+**Get-bruteforce**  ->  Get-bruteforce -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219942642-f42d7fb4-3bd4-43ca-9acd-c47ba4b845d3.png)
  
-- **Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
+**Get-FailedAndSuccessLogons** -> Get-FailedAndSuccessLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00' > failed.txt
 
 ![image](https://user-images.githubusercontent.com/10872139/219942596-8465f1f1-cf71-4b47-ba56-ce7a55cffa07.png)
 
-- **Get-ScheduledTaskEventLogs4698** -> Get-ScheduledTaskEventLogs4698 -StartTime '2021-02-14 00:00:00' -EndTime '2023-02-17 23:59:59'
+**Get-ScheduledTaskEventLogs4698** -> Get-ScheduledTaskEventLogs4698 -StartTime '2021-02-14 00:00:00' -EndTime '2023-02-17 23:59:59'
 
 ![image](https://user-images.githubusercontent.com/10872139/219942514-2b5b89f5-8130-4641-ace7-f7726ac67e50.png)
 
-- **Get-FailedRDP**  -> Get-FailedRDP -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
+**Get-FailedRDP**  -> Get-FailedRDP -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
 
-- **Get-FailedNetworkLogons**  -> Get-FailedNetworkLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
+**Get-FailedNetworkLogons**  -> Get-FailedNetworkLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-13 23:24:00'
 
-- **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
+**Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
  
 ![image](https://user-images.githubusercontent.com/10872139/219942447-94d3b51c-af95-4693-88d3-147b674a719e.png)
 
-- **Get-PowerShellLog** -> Get-PowerShellLog -Keywords "Invoke-WebRequest" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
+**Get-PowerShellLog** -> Get-PowerShellLog -Keywords "Invoke-WebRequest" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219940512-85a33055-826e-42fc-bd99-63b298d1f5d4.png )
 
-- **Get-PowerShellLogb64** -> Get-PowerShellLogb64 -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
+**Get-PowerShellLogb64** -> Get-PowerShellLogb64 -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219941486-dd201510-f9e5-4236-9f1b-2c288200b570.png)
 
-- **Get-PowerShellMaldev** -> Get-PowerShellMaldev -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
+**Get-PowerShellMaldev** -> Get-PowerShellMaldev -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219942195-8c391f71-4c10-401b-b1f5-72083a4ef51e.png)
 
-- **Get-SysmonProcess** -> Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonProcess** -> Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219943261-d07046c1-b174-4477-bf6f-f5a111b3556d.png)
 
--**Get-SysmonNetwork** -> Get-SysmonNetwork -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonNetwork** -> Get-SysmonNetwork -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219944178-d9615da9-7730-4ab4-8d59-855825346df4.png)
 
--**Get-SysmonFileStreamCreate** -> Get-SysmonFileStreamCreate -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonFileStreamCreate** -> Get-SysmonFileStreamCreate -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219944235-9d97d844-5254-4199-9ce7-abf92868b862.png)
 
--**Get-SysmonCreateRemoteThread** -> Get-SysmonCreateRemoteThread -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonCreateRemoteThread** -> Get-SysmonCreateRemoteThread -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219944285-29aaf2cd-fe85-4085-ba31-ab7c73f29b60.png)
 
--**Get-SysmonFileCreate** -> Get-SysmonFileCreate -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonFileCreate** -> Get-SysmonFileCreate -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219944437-8e4fca58-68ce-4fbd-9726-1ddcb530eac5.png)
 
--**Get-SysmonProcessTerminate** -> Get-SysmonProcessTerminate -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonProcessTerminate** -> Get-SysmonProcessTerminate -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219944507-4d87bf4c-7dc7-4fa1-97d1-6b61217efae3.png)
 
--**Get-SysmonRegAddDelete** -> Get-SysmonRegAddDelete -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonRegAddDelete** -> Get-SysmonRegAddDelete -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219946455-d2b12b5a-69d0-42a2-aa09-7b3154c486f6.png)
 
--**Get-SysmonReg** -> Get-SysmonReg -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonReg** -> Get-SysmonReg -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219946569-e3105cc9-2344-4b7d-a1f9-1f89f67c530e.png)
 
--**Get-SysmonRegRename** -> Get-SysmonRegRename -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonRegRename** -> Get-SysmonRegRename -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
--**Get-SysmonDNS** -> Get-SysmonDNS -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonDNS** -> Get-SysmonDNS -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219946774-a4f8e823-75e0-478c-a796-a51b30b7c79e.png)
 
--**Get-SysmonPipe** -> Get-SysmonPipe -StartTime '2023-02-19T15:06:00' -EndTime '2023-02-19T17:57:00'
+**Get-SysmonPipe** -> Get-SysmonPipe -StartTime '2023-02-19T15:06:00' -EndTime '2023-02-19T17:57:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219960141-6b209120-7ef3-4098-889b-a59c95e3e7a7.png)
 
 **Get-SysmonPipeConnected** -> Get-SysmonPipeConnected -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
+**Get-SysmonWMIFilter** ->  Get-SysmonWMIFilter -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
--**Get-SysmonWMIFilter** ->  Get-SysmonWMIFilter -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonWMIConsumer** -> Get-SysmonWMIConsumer -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
--**Get-SysmonWMIConsumer** -> Get-SysmonWMIConsumer -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonWMIBinding** -> Get-SysmonWMIBinding -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
--**Get-SysmonWMIBinding** -> Get-SysmonWMIBinding -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-SysmonDriver** -> Get-SysmonDriver -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
--**Get-SysmonDriver** -> Get-SysmonDriver -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
-
--**Get-Services** -> Get-Services -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+**Get-Services** -> Get-Services -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
 
 
