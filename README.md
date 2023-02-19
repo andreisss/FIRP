@@ -21,8 +21,8 @@
 + Analyze Sysmon value rename operations -> **Get-SysmonRegRename**
 + Analyze Sysmon Registry event records DWORD and QWORD -> **Get-SysmonReg**
 + Analyze Sysmon DNS query -> **Get-SysmonDNS**
-+ Analyze Pipe Created -> **Get-SysmonPipe**
-+ Analyze Pipe Connected -> **Get-SysmonPipeConnected**
++ Analyze Sysmon Pipe Created -> **Get-SysmonPipe**
++ Analyze Sysmon Pipe Connected -> **Get-SysmonPipeConnected**
 + Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
 + Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
 + Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
