@@ -1,14 +1,10 @@
-**FIRP**  - **Firt Incident Response Powershell** 
 ![image](https://user-images.githubusercontent.com/10872139/219940912-8e93f54c-f6dd-4cd6-84d8-b1afd9d0f916.png)
 
+- **FIRP** (Firt Incident Response PowerShell) is a PowerShell-based framework designed to help with incident response activities. The framework is capable of analyzing a variety of security logs and incident response artifacts, including PowerShell and Sysmon logs, as well as Windows event logs, and  hope in future to extend to memory.
 
-FIRP (Firt Incident Response PowerShell) is a PowerShell-based framework designed to help with incident response activities. The framework is capable of analyzing a variety of security logs and incident response artifacts, including PowerShell and Sysmon logs, as well as Windows event logs, and  hope in future to extend to memory.
+- **FIRP** provides a comprehensive set of PowerShell cmdlets that can be used to automate the analysis of these artifacts. The framework can be used to quickly identify and investigate suspicious activities on a system, including malware infections, network intrusions, and other security incidents.
 
-FIRP provides a comprehensive set of PowerShell cmdlets that can be used to automate the analysis of these artifacts. The framework can be used to quickly identify and investigate suspicious activities on a system, including malware infections, network intrusions, and other security incidents.
-
-The FIRP framework is highly extensible, and allows users to create their own custom cmdlets to analyze additional artifacts. FIRP also includes a set of pre-built modules for common incident response activities, such as file analysis, network analysis, and memory forensics.
-
-FIRP is designed to be easy to use, and provides a consistent interface for analyzing a wide range of security logs and incident response artifacts. The framework is open source and can be downloaded from the GitHub repository, making it accessible to a wide range of incident response professionals.
+- **The FIRP framework **is highly extensible, and allows users to create their own custom cmdlets to analyze additional artifacts. FIRP also includes a set of pre-built modules for common incident response activities, such as file analysis, network analysis, and memory forensics.
 
 
 
@@ -71,5 +67,3 @@ Get-SysmonProcess -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00
 
 
 Overall, this framework can be used to automate many of the incident response tasks, making the process faster and more efficient. However, it's important to note that this is just a high-level overview and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
-
-# Editor.md
