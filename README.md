@@ -12,6 +12,7 @@
 + Analyze Security success network logons -> **Get-SuccessNetworkLogons**
 + Analyze Security Pass The Hash Attack -> **Get-PassTheHash**
 + Analyze Security Windows Services -> **Get-Services**
++ Analyze Security Local Account Created -> **Get-LocalAccountCreated**
 
  #### Windows Defender Logs
 + Analyze Win Defender logs for malware -> **Get-DetectedMalware**
@@ -93,10 +94,14 @@ Overall, this framework can be used to automate many of the incident response ta
 
 ![image](https://user-images.githubusercontent.com/10872139/219980444-9b154538-34ae-42b3-af01-b4aee61a891b.png)
 
-
 **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
  
 ![image](https://user-images.githubusercontent.com/10872139/219942447-94d3b51c-af95-4693-88d3-147b674a719e.png)
+
+**Get-LocalAccountCreated** -> Get-LocalAccountCreated  -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219982538-b125b1a0-4ed7-42f7-b41b-54d3fba85581.png)
+
 
 **Get-PowerShellLog** -> Get-PowerShellLog -Keywords "Invoke-WebRequest" -StartTime '2023-02-10T12:00:00' -EndTime '2023-02-15T21:58:00'
 
