@@ -68,6 +68,30 @@ Overall, this framework can be used to automate many of the incident response ta
 
 ![image](https://user-images.githubusercontent.com/10872139/219944507-4d87bf4c-7dc7-4fa1-97d1-6b61217efae3.png)
 
+-**Get-SysmonRegAddDelete** -> Get-SysmonRegAddDelete -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219946455-d2b12b5a-69d0-42a2-aa09-7b3154c486f6.png)
+
+-**Get-SysmonReg** -> Get-SysmonReg -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219946569-e3105cc9-2344-4b7d-a1f9-1f89f67c530e.png)
+
+-**Get-SysmonRegRename** -> Get-SysmonRegRename -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+-**Get-SysmonDNS** -> Get-SysmonDNS -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219946774-a4f8e823-75e0-478c-a796-a51b30b7c79e.png)
+
+-**Get-SysmonWMIFilter** ->  Get-SysmonWMIFilter -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+-**Get-SysmonWMIConsumer** -> Get-SysmonWMIConsumer -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+-**Get-SysmonWMIBinding** -> Get-SysmonWMIBinding -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+-**Get-SysmonDriver** -> Get-SysmonDriver -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
+-**Get-Services** -> Get-Services -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
+
 
 #### What can you do with FIRP (Firt Incident Response Powershell)?            
 
