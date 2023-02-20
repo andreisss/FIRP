@@ -116,8 +116,6 @@ Overall, this framework can be used to automate many of the incident response ta
 
 ![image](https://user-images.githubusercontent.com/10872139/220029061-b5029e60-1657-48b9-b2cd-aeedff548823.png)
 
-![image](https://user-images.githubusercontent.com/10872139/220028849-16142026-cb04-4328-93e7-577807a5ccf2.png)
-
 **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
  
 ![image](https://user-images.githubusercontent.com/10872139/219942447-94d3b51c-af95-4693-88d3-147b674a719e.png)
