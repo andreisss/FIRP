@@ -15,6 +15,7 @@
 + Analyze Security Local Account Created -> **Get-LocalAccountCreated**
 + Analyze Security Local Account Added to Administrator Group -> **Get-LocalAccountAddedToAdmin**
 + Analyze Security Local Account Password changed -> **Get-LocalAccountPwdChanged**
++ Analyze Security Local Account Disabled -> **Get-LocalAccountDisabled**
 
  #### Windows Defender Logs
 + Analyze Win Defender logs for malware -> **Get-DetectedMalware**
@@ -95,6 +96,11 @@ Overall, this framework can be used to automate many of the incident response ta
 **Get-SuccessNetworkLogons**   -> Get-SuccessNetworkLogons -StartTime '2023-02-12 00:00:00' -EndTime '2023-02-19 23:54:00'
 
 ![image](https://user-images.githubusercontent.com/10872139/219980444-9b154538-34ae-42b3-af01-b4aee61a891b.png)
+
+**Get-LocalAccountDisabled** -> Get-LocalAccountDisabled -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/219983502-23fd5eb7-32d3-44f0-86b4-1865d909d9e9.png)
+
 
 **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
  
