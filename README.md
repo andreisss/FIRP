@@ -19,6 +19,7 @@
 + Analyze Security Local Account Lockout -> **Get-LocalAccountLockout**
 + Analyze Security Local Account Changed -> **Get-LocalAccountChanged**
 + Analyze Security Local Account Enabled -> **Get-LocalAccountEnabled**
++ Analyze Security User Added or Removed from Security Group -> **Get-UserAddedGlobalGroup** 
 
 
  #### Windows Defender Logs
