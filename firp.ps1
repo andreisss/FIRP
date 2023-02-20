@@ -1713,3 +1713,29 @@ Get-WinEvent -FilterHashTable @{LogName='Security';StartTime=$StartTime; EndTime
         Select-Object * |
         Format-List
 }
+
+Function Get-UserAddedGlobalGroup {
+<#
+.SYNOPSIS
+    Get-UserAddedGlobalGroup extracts events [Evt 4728-4729] from the Security Logs.
+.DESCRIPTION
+    Event ID 4728-4729 when User Added or Removed from Security-Enabled Global Group
+
+.EXAMPLE
+   Get-UserAddedGlobalGroup -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+#>
+    param (
+        [parameter(Mandatory = $true)]
+        [DateTime]$StartTime,
+        [parameter(Mandatory = $true)]
+        [DateTime]$EndTime
+    )
+
+ $EventIds = @("4728", "4729")
+
+
+Get-WinEvent -FilterHashTable @{LogName='Security';StartTime=$StartTime; EndTime=$EndTime; ID=$EventIds} |
+        Select-Object * |
+        Format-List
+}
