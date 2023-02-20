@@ -17,6 +17,9 @@
 + Analyze Security Local Account Password changed -> **Get-LocalAccountPwdChanged**
 + Analyze Security Local Account Disabled -> **Get-LocalAccountDisabled**
 + Analyze Security Local Account Lockout -> **Get-LocalAccountLockout**
++ Analyze Security Local Account Changed -> **Get-LocalAccountChanged**
++ Analyze Security Local Account Enabled -> **Get-LocalAccountEnabled**
+
 
  #### Windows Defender Logs
 + Analyze Win Defender logs for malware -> **Get-DetectedMalware**
@@ -103,6 +106,16 @@ Overall, this framework can be used to automate many of the incident response ta
 ![image](https://user-images.githubusercontent.com/10872139/219983502-23fd5eb7-32d3-44f0-86b4-1865d909d9e9.png)
 
 **Get-LocalAccountLockout** -> Get-LocalAccountLockout -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+**Get-LocalAccountChanged** -> Get-LocalAccountChanged -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/220028849-16142026-cb04-4328-93e7-577807a5ccf2.png)
+
+**Get-Get-LocalAccountEnabled** -> Get-Get-LocalAccountEnabled -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/220029061-b5029e60-1657-48b9-b2cd-aeedff548823.png)
+
+![image](https://user-images.githubusercontent.com/10872139/220028849-16142026-cb04-4328-93e7-577807a5ccf2.png)
 
 **Get-LogonInfo** -> Get-LogonInfo -StartTime "2023-02-15T00:00:00" -EndTime "2023-02-16T00:00:00"
  
