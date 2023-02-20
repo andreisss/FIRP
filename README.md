@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/10872139/219940912-8e93f54c-f6dd-4cd6-84d8-b1afd9d0f916.png)
+![ffffff](https://user-images.githubusercontent.com/10872139/220172521-10324c94-cb78-43b4-aa2e-c16c61e3b634.png)
 
 #### What can you do with FIRP (Firt Incident Response Powershell)?            
 
