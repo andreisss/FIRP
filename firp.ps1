@@ -1658,3 +1658,58 @@ Get-WinEvent -FilterHashTable @{LogName='Security';StartTime=$StartTime; EndTime
         Select-Object * |
         Format-List
 }
+
+
+Function Get-LocalAccountChanged {
+<#
+.SYNOPSIS
+    Event ID 4738 - A user account was changed
+
+.DESCRIPTION
+    Event ID 4738 - A user account was changed
+
+.EXAMPLE
+   Get-LocalAccountChanged -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+#>
+    param (
+        [parameter(Mandatory = $true)]
+        [DateTime]$StartTime,
+        [parameter(Mandatory = $true)]
+        [DateTime]$EndTime
+    )
+
+ $EventIds = @("4738")
+
+
+Get-WinEvent -FilterHashTable @{LogName='Security';StartTime=$StartTime; EndTime=$EndTime; ID=$EventIds} |
+        Select-Object * |
+        Format-List
+}
+
+
+Function Get-LocalAccountEnabled {
+<#
+.SYNOPSIS
+    Get-LocalAccountEnabled extracts events [Evt 4722] from the Security Logs.
+.DESCRIPTION
+    Event ID 4722 - A user account was enabled.
+
+.EXAMPLE
+   Get-LocalAccountEnabled -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+#>
+    param (
+        [parameter(Mandatory = $true)]
+        [DateTime]$StartTime,
+        [parameter(Mandatory = $true)]
+        [DateTime]$EndTime
+    )
+
+ $EventIds = @("4722")
+
+
+Get-WinEvent -FilterHashTable @{LogName='Security';StartTime=$StartTime; EndTime=$EndTime; ID=$EventIds} |
+        Select-Object * |
+        Format-List
+}
