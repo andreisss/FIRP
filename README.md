@@ -51,6 +51,10 @@
 + Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
 + Analyze Sysmon Drivers -> **Get-SysmonDriver**
 
+#### Windows Forensic
++ Analyze Prefetch file -> **Get-PrefetchFiles**
+
+
 - **FIRP** (Firt Incident Response PowerShell) is a PowerShell-based framework designed to help with incident response activities. The framework is capable of analyzing a variety of security logs and incident response artifacts, including PowerShell and Sysmon logs, as well as Windows event logs, and  hope in future to extend to memory.
 
 - **FIRP** provides a comprehensive set of PowerShell cmdlets that can be used to automate the analysis of these artifacts. The framework can be used to quickly identify and investigate suspicious activities on a system, including malware infections, network intrusions, and other security incidents.
@@ -199,6 +203,10 @@ Overall, this framework can be used to automate many of the incident response ta
 
 **Get-Services** -> Get-Services -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-19T11:57:00'
 
+
+**Get-PrefetchFiles -FolderPath 'C:\Windows\Prefetch' -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+![image](https://user-images.githubusercontent.com/10872139/224541460-91c25f21-5761-47c6-8e40-280fadecab9d.png)
 
 
 Overall, this PowerShell framework can be used to automate many incident response tasks, making the process faster and more efficient. It's important to note that this is just a high-level overview, and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
