@@ -1714,6 +1714,7 @@ Get-WinEvent -FilterHashTable @{LogName='Security';StartTime=$StartTime; EndTime
         Format-List
 }
 
+
 Function Get-UserAddedGlobalGroup {
 <#
 .SYNOPSIS
@@ -1721,8 +1722,7 @@ Function Get-UserAddedGlobalGroup {
 .DESCRIPTION
     Event ID 4728-4729 when User Added or Removed from Security-Enabled Global Group
 
-.EXAMPLE
-   Get-UserAddedGlobalGroup -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
 
 #>
     param (
@@ -1739,3 +1739,52 @@ Get-WinEvent -FilterHashTable @{LogName='Security';StartTime=$StartTime; EndTime
         Select-Object * |
         Format-List
 }
+
+Function Get-PrefetchFiles {
+    <#
+    .SYNOPSIS
+        Get-PrefetchFiles retrieves all Prefetch files from the specified folder for a specified time frame
+    .DESCRIPTION
+        Query the specified folder and pull back all Prefetch files based on Last Accessed Time.
+    .EXAMPLE
+
+       Get-PrefetchFiles -FolderPath 'C:\Windows\Prefetch' -StartTime '2023-02-18T08:06:00' -EndTime '2023-02-20T11:57:00'
+
+    #>
+    param (
+        [parameter(Mandatory = $true)]
+        [string]$FolderPath,
+        [parameter(Mandatory = $true)]
+        [DateTime]$StartTime,
+        [parameter(Mandatory = $true)]
+        [DateTime]$EndTime
+    )
+
+    $files = Get-ChildItem -Path $FolderPath -Filter *.pf | Where-Object { $_.LastAccessTime -ge $StartTime -and $_.LastAccessTime -le $EndTime }
+    
+    $files | ForEach-Object {
+        $file = $_.FullName
+        $name = $_.Name
+        $lastAccessed = $_.LastAccessTime
+        $size = $_.Length
+
+        $fileProperties = Get-ItemProperty -Path $file -ErrorAction SilentlyContinue
+        $companyName = $fileProperties.CompanyName
+        $fileVersion = $fileProperties.FileVersion
+        $productName = $fileProperties.ProductName
+
+        $props = @{
+            Name = $name
+            LastAccessed = $lastAccessed
+            Size = $size
+            CompanyName = $companyName
+            FileVersion = $fileVersion
+            ProductName = $productName
+        }
+
+        New-Object PSObject -Property $props
+    }
+}
+
+
+
