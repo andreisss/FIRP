@@ -1,58 +1,6 @@
 ![ffffff](https://user-images.githubusercontent.com/10872139/220172521-10324c94-cb78-43b4-aa2e-c16c61e3b634.png)
 
-#### What can you do with FIRP (Firt Incident Response Powershell)?            
-
- #### Security Logs
-+ Analyze Security Logs for brute force attempts, time-frame -> **Get-BruteForce**
-+ Analyze Security failed logons and successess, time-frame -> **Get-FailedAndSuccessLogons**
-+ Analyze Security suspicious IP connections to the machine, time-frame -> **Get-LogonInfo**
-+ Analyze Security scheduled tasks, time-frame -> **Get-ScheduledTaskEventLogs4698**
-+ Analyze Security failed RDP sessions, time-frame -> **Get-FailedRDP**
-+ Analyze Security failed network logons -> **Get-FailedNetworkLogons**
-+ Analyze Security success network logons -> **Get-SuccessNetworkLogons**
-+ Analyze Security Pass The Hash Attack -> **Get-PassTheHash**
-+ Analyze Security Windows Services -> **Get-Services**
-+ Analyze Security Local Account Created -> **Get-LocalAccountCreated**
-+ Analyze Security Local Account Added to Administrator Group -> **Get-LocalAccountAddedToAdmin**
-+ Analyze Security Local Account Password changed -> **Get-LocalAccountPwdChanged**
-+ Analyze Security Local Account Disabled -> **Get-LocalAccountDisabled**
-+ Analyze Security Local Account Lockout -> **Get-LocalAccountLockout**
-+ Analyze Security Local Account Changed -> **Get-LocalAccountChanged**
-+ Analyze Security Local Account Enabled -> **Get-LocalAccountEnabled**
-+ Analyze Security User Added or Removed from Security Group -> **Get-UserAddedGlobalGroup** 
-
-
- #### Windows Defender Logs
-+ Analyze Win Defender logs for malware -> **Get-DetectedMalware**
-+ Analyze Win Defender logs for Real Time disabled -> **Get-DefenderAVRealTimeDisabled**
-+ Analyze Win Defender logs, antimalware configuration changed.-> **Get-DefenderAVChanged**
-+ Analyze Win Defender logs, antimalware engine found malware -> **Get-DefenderAntimalware** 
-
- #### Powershell Logs
-+ Analyze PowerShell logs using keywords, time-frame -> **Get-PowerShellLog**
-+ Analyze PowerShell base64 scripts used, time-frame -> **Get-PowerShellLogb64**
-+ Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
-
- #### Sysmon Logs
-+ Analyze Sysmon Processes using suspicious paths -> **Get-SysmonProcess**
-+ Analyze Sysmon Network Activity -> **Get-SysmonNetwork**
-+ Analyze Sysmon Zone Identifier files -> **Get-SysmonFileStreamCreate**
-+ Analyze Sysmon Process Injection activity -> **Get-SysmonCreateRemoteThread**
-+ Analyze Sysmon File Creation -> **Get-SysmonFileCreate**
-+ Analyze Sysmon Process Termination -> **Get-SysmonProcessTerminate**
-+ Analyze Sysmon Registry key and value create and delete operations -> **Get-SysmonRegAddDelete**
-+ Analyze Sysmon value rename operations -> **Get-SysmonRegRename**
-+ Analyze Sysmon Registry event records DWORD and QWORD -> **Get-SysmonReg**
-+ Analyze Sysmon DNS query -> **Get-SysmonDNS**
-+ Analyze Sysmon Pipe Created -> **Get-SysmonPipe**
-+ Analyze Sysmon Pipe Connected -> **Get-SysmonPipeConnected**
-+ Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
-+ Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
-+ Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
-+ Analyze Sysmon Drivers -> **Get-SysmonDriver**
-
-#### Windows Forensic
-+ Analyze Prefetch file -> **Get-PrefetchFiles**
+#### What can you do with FIRP (Firt Incident Response Powershell)?       
 
 
 - **FIRP** (Firt Incident Response PowerShell) is a PowerShell-based framework designed to help with incident response activities. The framework is capable of analyzing a variety of security logs and incident response artifacts, including PowerShell and Sysmon logs, as well as Windows event logs, and  hope in future to extend to memory.
@@ -210,3 +158,57 @@ Overall, this framework can be used to automate many of the incident response ta
 
 
 Overall, this PowerShell framework can be used to automate many incident response tasks, making the process faster and more efficient. It's important to note that this is just a high-level overview, and the actual implementation of such a framework may involve many more steps and considerations depending on the specific requirements of the organization.
+
+ #### Security Logs
++ Analyze Security Logs for brute force attempts, time-frame -> **Get-BruteForce**
++ Analyze Security failed logons and successess, time-frame -> **Get-FailedAndSuccessLogons**
++ Analyze Security suspicious IP connections to the machine, time-frame -> **Get-LogonInfo**
++ Analyze Security scheduled tasks, time-frame -> **Get-ScheduledTaskEventLogs4698**
++ Analyze Security failed RDP sessions, time-frame -> **Get-FailedRDP**
++ Analyze Security failed network logons -> **Get-FailedNetworkLogons**
++ Analyze Security success network logons -> **Get-SuccessNetworkLogons**
++ Analyze Security Pass The Hash Attack -> **Get-PassTheHash**
++ Analyze Security Windows Services -> **Get-Services**
++ Analyze Security Local Account Created -> **Get-LocalAccountCreated**
++ Analyze Security Local Account Added to Administrator Group -> **Get-LocalAccountAddedToAdmin**
++ Analyze Security Local Account Password changed -> **Get-LocalAccountPwdChanged**
++ Analyze Security Local Account Disabled -> **Get-LocalAccountDisabled**
++ Analyze Security Local Account Lockout -> **Get-LocalAccountLockout**
++ Analyze Security Local Account Changed -> **Get-LocalAccountChanged**
++ Analyze Security Local Account Enabled -> **Get-LocalAccountEnabled**
++ Analyze Security User Added or Removed from Security Group -> **Get-UserAddedGlobalGroup** 
+
+
+ #### Windows Defender Logs
++ Analyze Win Defender logs for malware -> **Get-DetectedMalware**
++ Analyze Win Defender logs for Real Time disabled -> **Get-DefenderAVRealTimeDisabled**
++ Analyze Win Defender logs, antimalware configuration changed.-> **Get-DefenderAVChanged**
++ Analyze Win Defender logs, antimalware engine found malware -> **Get-DefenderAntimalware** 
+
+ #### Powershell Logs
++ Analyze PowerShell logs using keywords, time-frame -> **Get-PowerShellLog**
++ Analyze PowerShell base64 scripts used, time-frame -> **Get-PowerShellLogb64**
++ Analyze PowerShell malicious keywords as a database (keywords.txt) -> **Get-PowerShellMaldev**
+
+ #### Sysmon Logs
++ Analyze Sysmon Processes using suspicious paths -> **Get-SysmonProcess**
++ Analyze Sysmon Network Activity -> **Get-SysmonNetwork**
++ Analyze Sysmon Zone Identifier files -> **Get-SysmonFileStreamCreate**
++ Analyze Sysmon Process Injection activity -> **Get-SysmonCreateRemoteThread**
++ Analyze Sysmon File Creation -> **Get-SysmonFileCreate**
++ Analyze Sysmon Process Termination -> **Get-SysmonProcessTerminate**
++ Analyze Sysmon Registry key and value create and delete operations -> **Get-SysmonRegAddDelete**
++ Analyze Sysmon value rename operations -> **Get-SysmonRegRename**
++ Analyze Sysmon Registry event records DWORD and QWORD -> **Get-SysmonReg**
++ Analyze Sysmon DNS query -> **Get-SysmonDNS**
++ Analyze Sysmon Pipe Created -> **Get-SysmonPipe**
++ Analyze Sysmon Pipe Connected -> **Get-SysmonPipeConnected**
++ Analyze Sysmon WMI filters -> **Get-SysmonWMIFilter**
++ Analyze Sysmon WMI Consumers -> **Get-SysmonWMIConsumer**
++ Analyze Sysmon WMI binding -> **Get-SysmonWMIBinding**
++ Analyze Sysmon Drivers -> **Get-SysmonDriver**
+
+#### Windows Forensic
++ Analyze Prefetch file -> **Get-PrefetchFiles**
+
+
